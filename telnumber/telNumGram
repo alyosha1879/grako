@@ -1,0 +1,5 @@
+telnum = num num num hyphen num num num num hyphen num num num num;
+
+hyphen = '-';
+
+num = ?/[0-9]/?;
