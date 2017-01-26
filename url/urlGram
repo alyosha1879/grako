@@ -1,0 +1,20 @@
+sipURL = schema colon [userinfo] hostport;
+
+schema = 'sip'|'sips';
+
+colon = ':';
+
+userinfo = user [colon password] atmark;
+
+atmark = '@';
+
+password = ?/[a-z]*/?;
+
+user = ?/[a-z]*/?;
+
+hostport = host[colon port];
+
+host = ?/[a-z]*[.][a-z]*/?;
+
+port = ?/[1-9][0-9]*/?;
+
